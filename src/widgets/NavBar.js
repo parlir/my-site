@@ -1,63 +1,69 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
+import classNames from "classnames";
 
-const NavBar = () => (
+const NavBar = ({ location }) => (
   <nav className="nav">
-    <div className="nav-left">
-      <a className="nav-item">
-        <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
-      </a>
-    </div>
-
-    <div className="nav-center">
-      <a className="nav-item">
-        <span className="icon">
-          <i className="fa fa-github" />
-        </span>
-      </a>
-      <a className="nav-item">
-        <span className="icon">
-          <i className="fa fa-twitter" />
-        </span>
-      </a>
-    </div>
-    <span className="nav-toggle">
-      <span />
-      <span />
-      <span />
-    </span>
-    <div className="nav-right nav-menu">
-      <a className="nav-item">
-        Home
-      </a>
-      <a className="nav-item">
-        Documentation
-      </a>
-      <a className="nav-item">
-        Blog
-      </a>
-
-      <div className="nav-item">
-        <div className="field is-grouped">
-          <p className="control">
-            <a className="button">
-              <span className="icon">
-                <i className="fa fa-twitter" />
-              </span>
-              <span>Tweet</span>
-            </a>
-          </p>
-          <p className="control">
-            <a className="button is-primary">
-              <span className="icon">
-                <i className="fa fa-download" />
-              </span>
-              <span>Download</span>
-            </a>
-          </p>
-        </div>
+    <div className="container">
+      <div className="nav-left">
+        <Link to="/" className="nav-item">
+          <h1>Da Ralph Parkison Site</h1>
+        </Link>
+      </div>
+      <span className="nav-toggle">
+        <span />
+        <span />
+        <span />
+      </span>
+      <div className="nav-right nav-menu">
+        <Link
+          to="/"
+          className={classNames(
+            "nav-item",
+            "is-tab",
+            "is-hidden-mobile",
+            location.pathname === "/" ? "is-active" : ""
+          )}
+        >
+          About
+        </Link>
+        <Link
+          to="/coding/"
+          className={classNames(
+            "nav-item",
+            "is-tab",
+            "is-hidden-mobile",
+            location.pathname === "/coding/" ? "is-active" : ""
+          )}
+        >
+          Coding
+        </Link>
+        <Link
+          to="/blog/"
+          className={classNames(
+            "nav-item",
+            "is-tab",
+            "is-hidden-mobile",
+            location.pathname === "/blog/" ? "is-active" : ""
+          )}
+        >
+          Blog
+        </Link>
+        <Link
+          to="/contact/"
+          className={classNames(
+            "nav-item",
+            "is-tab",
+            "is-hidden-mobile",
+            location.pathname === "/contact/" ? "is-active" : ""
+          )}
+        >
+          Contact
+        </Link>
       </div>
     </div>
   </nav>
 );
 
-export default NavBar;
+export default withRouter(NavBar);
