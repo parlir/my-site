@@ -1,69 +1,95 @@
-import React from "react";
+import React, { Component, PropTypes } from "react";
+import classnames from "classnames";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
-import classNames from "classnames";
 
-const NavBar = ({ location }) => (
-  <nav className="nav">
-    <div className="container">
-      <div className="nav-left">
-        <Link to="/" className="nav-item">
-          <h1>Da Ralph Parkison Site</h1>
-        </Link>
-      </div>
-      <span className="nav-toggle">
-        <span />
-        <span />
-        <span />
-      </span>
-      <div className="nav-right nav-menu">
-        <Link
-          to="/"
-          className={classNames(
-            "nav-item",
-            "is-tab",
-            "is-hidden-mobile",
-            location.pathname === "/" ? "is-active" : ""
-          )}
-        >
-          About
-        </Link>
-        <Link
-          to="/coding/"
-          className={classNames(
-            "nav-item",
-            "is-tab",
-            "is-hidden-mobile",
-            location.pathname === "/coding/" ? "is-active" : ""
-          )}
-        >
-          Coding
-        </Link>
-        <Link
-          to="/blog/"
-          className={classNames(
-            "nav-item",
-            "is-tab",
-            "is-hidden-mobile",
-            location.pathname === "/blog/" ? "is-active" : ""
-          )}
-        >
-          Blog
-        </Link>
-        <Link
-          to="/contact/"
-          className={classNames(
-            "nav-item",
-            "is-tab",
-            "is-hidden-mobile",
-            location.pathname === "/contact/" ? "is-active" : ""
-          )}
-        >
-          Contact
-        </Link>
-      </div>
-    </div>
-  </nav>
-);
+class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggled: false
+    };
+  }
+  render() {
+    return (
+      <nav className="nav">
+        <div className="container">
+          <div className="nav-left">
+            <Link to="/" className="nav-item">
+              <h1>Da Ralph Parkison Site</h1>
+            </Link>
+          </div>
+          <span
+            className={classnames(
+              "nav-toggle",
+              this.state.toggled ? "is-active" : ""
+            )}
+            onClick={() => this.setState({ toggled: !this.state.toggled })}
+          >
+            <span />
+            <span />
+            <span />
+          </span>
+          <div
+            className={classnames(
+              "nav-right",
+              "nav-menu",
+              this.state.toggled ? "is-active" : ""
+            )}
+          >
+            <Link
+              onClick={() => this.setState({ toggled: !this.state.toggled })}
+              to="/"
+              className={classnames(
+                "nav-item",
+                "is-tab",
+                this.props.location.pathname === "/" ? "is-active" : ""
+              )}
+            >
+              About
+            </Link>
+            <Link
+              onClick={() => this.setState({ toggled: !this.state.toggled })}
+              to="/coding/"
+              className={classnames(
+                "nav-item",
+                "is-tab",
+                this.props.location.pathname === "/coding/" ? "is-active" : ""
+              )}
+            >
+              Coding
+            </Link>
+            <Link
+              onClick={() => this.setState({ toggled: !this.state.toggled })}
+              to="/blog/"
+              className={classnames(
+                "nav-item",
+                "is-tab",
+                this.props.location.pathname === "/blog/" ? "is-active" : ""
+              )}
+            >
+              Blog
+            </Link>
+            <Link
+              onClick={() => this.setState({ toggled: !this.state.toggled })}
+              to="/contact/"
+              className={classnames(
+                "nav-item",
+                "is-tab",
+                this.props.location.pathname === "/contact/" ? "is-active" : ""
+              )}
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
+
+NavBar.propTypes = {
+  location: PropTypes.object.isRequired
+};
 
 export default withRouter(NavBar);

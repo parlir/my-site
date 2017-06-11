@@ -1,9 +1,10 @@
 import React from "react";
+import TextReader from "../widgets/TextReader";
 
 const AsciiPic = ({ style }) => (
   <div
     style={{
-      lineHeight: "5px",
+      lineHeight: "6px",
       display: "flex",
       justifyContent: "center",
       alignItems: "center"
