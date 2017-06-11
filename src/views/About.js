@@ -4,13 +4,9 @@ import TextReader from "../widgets/TextReader";
 import AsciiPic from "../widgets/AsciiPic";
 
 const MainSection = () => (
-  <div style={{ ...styles.textContainer, height: "150px" }}>
+  <div style={{ ...styles.textContainer, height: "190px" }}>
     <div>
-      <TextReader
-        text="Da Ralph Parkison Site."
-        speed={70}
-        style={styles.header}
-      />
+      <TextReader text="Summary" speed={70} style={styles.header} />
     </div>
     <div>
       <TextReader
@@ -23,7 +19,7 @@ const MainSection = () => (
 );
 
 const CodingSection = () => (
-  <div style={{ ...styles.textContainer, height: "140px" }}>
+  <div style={{ ...styles.textContainer, height: "190px" }}>
     <div>
       <TextReader text="Coding" speed={70} style={styles.header} />
     </div>
@@ -57,7 +53,7 @@ const About = () => (
     <div className="section">
       <div className="container">
         <div className="columns">
-          <div className="column">
+          <div className="column" style={{ marginBottom: "20px" }}>
             <AsciiPic />
           </div>
           <div className="column is-two-thirds">
@@ -73,9 +69,10 @@ const About = () => (
 
 const styles = {
   header: {
-    fontSize: 22,
+    fontSize: 32,
     fontWeight: "900",
     textAlign: "center",
+    fontStyle: "cursive",
     borderBottom: "1px solid #999"
   },
   textContainer: { height: "150px", paddingRight: "25px", paddingLeft: "25px" }

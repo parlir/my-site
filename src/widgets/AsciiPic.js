@@ -4,7 +4,7 @@ import TextReader from "../widgets/TextReader";
 const AsciiPic = ({ style }) => (
   <div
     style={{
-      lineHeight: "6px",
+      lineHeight: "8px",
       display: "flex",
       justifyContent: "center",
       alignItems: "center"
