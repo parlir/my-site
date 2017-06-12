@@ -15,8 +15,16 @@ class NavBar extends Component {
       <nav className="nav">
         <div className="container">
           <div className="nav-left">
-            <Link to="/" className="nav-item">
-              <h1>Da Ralph Parkison Site</h1>
+            <Link
+              to="/"
+              className="nav-item"
+              style={{
+                fontWeight: "900",
+                fontSize: 30,
+                color: "#222"
+              }}
+            >
+              <h1>Ralph Parkison</h1>
             </Link>
           </div>
           <span
@@ -50,28 +58,6 @@ class NavBar extends Component {
             </Link>
             <Link
               onClick={() => this.setState({ toggled: !this.state.toggled })}
-              to="/coding/"
-              className={classnames(
-                "nav-item",
-                "is-tab",
-                this.props.location.pathname === "/coding/" ? "is-active" : ""
-              )}
-            >
-              Editor
-            </Link>
-            <Link
-              onClick={() => this.setState({ toggled: !this.state.toggled })}
-              to="/blog/"
-              className={classnames(
-                "nav-item",
-                "is-tab",
-                this.props.location.pathname === "/blog/" ? "is-active" : ""
-              )}
-            >
-              Blog
-            </Link>
-            <Link
-              onClick={() => this.setState({ toggled: !this.state.toggled })}
               to="/contact/"
               className={classnames(
                 "nav-item",
@@ -80,6 +66,17 @@ class NavBar extends Component {
               )}
             >
               Contact
+            </Link>
+            <Link
+              onClick={() => this.setState({ toggled: !this.state.toggled })}
+              to="/coding/"
+              className={classnames(
+                "nav-item",
+                "is-tab",
+                this.props.location.pathname === "/coding/" ? "is-active" : ""
+              )}
+            >
+              Editor
             </Link>
           </div>
         </div>

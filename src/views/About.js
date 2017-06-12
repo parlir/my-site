@@ -10,8 +10,8 @@ const MainSection = () => (
     </div>
     <div>
       <TextReader
-        text="Hi this is my personal website. If you wanna run some javascript code go to the code page. If you wanna see ma blog go to the blog page. If ya need to contact me go to the contact page. It's just that easy &#9786;."
-        speed={8}
+        text="Hi this is my personal website. If you wanna run some javascript code go to the editor page. If you wanna see ma blog go to the blog page. If ya need to contact me go to the contact page. It's just that easy &#9786;."
+        speed={10}
         style={{ fontSize: 13 }}
       />
     </div>
@@ -25,8 +25,8 @@ const CodingSection = () => (
     </div>
     <div>
       <TextReader
-        text="I am a programmer. I like using javascript, python, c# and sass. I work mostly in react, react-native, django, asp.net. For recreation I enjoy playing chess, running and travelling. I am currently creating a fitness app. "
-        speed={5}
+        text="I am a programmer. I like using javascript, python, c# and sass. I work mostly in react, react-native, django, asp.net. "
+        speed={10}
         style={{ fontSize: 13 }}
       />
     </div>
@@ -40,8 +40,8 @@ const RecreationSection = () => (
     </div>
     <div>
       <TextReader
-        text="For recreation I enjoy playing chess, running and travelling. I am currently creating a fitness app. "
-        speed={5}
+        text="For recreation I enjoy playing chess, running and travel. I am currently creating a fitness app. "
+        speed={10}
         style={{ fontSize: 13 }}
       />
     </div>
