@@ -57,7 +57,7 @@ class NavBar extends Component {
                 this.props.location.pathname === "/coding/" ? "is-active" : ""
               )}
             >
-              Coding
+              Editor
             </Link>
             <Link
               onClick={() => this.setState({ toggled: !this.state.toggled })}
