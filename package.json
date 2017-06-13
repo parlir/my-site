@@ -9,6 +9,7 @@
     "react": "^15.5.4",
     "react-codemirror": "^1.0.0",
     "react-dom": "^15.5.4",
+    "react-pdf-js": "^1.0.35",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1"
   },

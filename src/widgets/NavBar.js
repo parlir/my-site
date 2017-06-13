@@ -3,6 +3,8 @@ import classnames from "classnames";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
 
+import TextReader from "./TextReader";
+
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -15,17 +17,15 @@ class NavBar extends Component {
       <nav className="nav">
         <div className="container">
           <div className="nav-left">
-            <Link
-              to="/"
-              className="nav-item"
+            <TextReader
+              text="Ralph Parkison"
               style={{
                 fontWeight: "900",
                 fontSize: 30,
                 color: "#222"
               }}
-            >
-              <h1>Ralph Parkison</h1>
-            </Link>
+              speed={120}
+            />
           </div>
           <span
             className={classnames(
