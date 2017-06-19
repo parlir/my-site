@@ -18,6 +18,7 @@ class NavBar extends Component {
         <div className="container">
           <div className="nav-left">
             <TextReader
+              key={this.props.location.pathname}
               text="Ralph Parkison"
               style={{
                 fontWeight: "900",
