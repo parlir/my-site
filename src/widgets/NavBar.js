@@ -68,17 +68,6 @@ class NavBar extends Component {
             >
               Contact
             </Link>
-            <Link
-              onClick={() => this.setState({ toggled: !this.state.toggled })}
-              to="/coding/"
-              className={classnames(
-                "nav-item",
-                "is-tab",
-                this.props.location.pathname === "/coding/" ? "is-active" : ""
-              )}
-            >
-              Editor
-            </Link>
           </div>
         </div>
       </nav>
