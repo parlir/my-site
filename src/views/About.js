@@ -43,6 +43,16 @@ const About = () => (
                   </span>
                 </div>
                 <div style={styles.divider} />
+                <div>
+                  <span style={styles.header}>Coding</span>
+                </div>
+                <div>
+                  <span style={{ fontSize: 13 }} className="content">
+                    I do mostly web dev I've worked with a fair number of web frameworks (Django, Asp.net, Node etc...). I have done work in both the front end and the backend. You can checkout some of my code from my github page. Currently I am working on a fitness app called chizzli which you can get off google play and apple store. You can also checkout the web app at chizzli.com.
+                  </span>
+                </div>
+              </div>
+              <div className="column">
                 <span style={styles.header}>
                   Tech I know
                 </span>
@@ -59,16 +69,6 @@ const About = () => (
                     <li>General stuff like data structs etc...</li>
                     <li>Lover of emacs and hater of vim</li>
                   </ul>
-                </div>
-              </div>
-              <div className="column">
-                <div>
-                  <span style={styles.header}>Coding</span>
-                </div>
-                <div>
-                  <span style={{ fontSize: 13 }} className="content">
-                    I do mostly web dev I've worked with a fair number of web frameworks (Django, Asp.net, Node etc...). I have done work in both the front end and the backend. You can checkout some of my code from my github page. Currently I am working on a fitness app called chizzli which you can get off google play and apple store. You can also checkout the web app at chizzli.com.
-                  </span>
                 </div>
                 <div style={styles.divider} />
                 <div>
