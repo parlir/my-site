@@ -29,19 +29,25 @@ const Contact = () => (
         </div>
         <footer className="card-footer">
           <a href="mailto:chesslunatic@gmail.com" className="card-footer-item">
-            Email
+            <b>Email</b>
           </a>
           <a
             className="card-footer-item"
             href="https://www.facebook.com/profile.php?id=100006292510525"
           >
-            Facebook
+            <b>Facebook</b>
           </a>
           <a
             className="card-footer-item"
             href="https://github.com/rparkisoniii/"
           >
-            Github
+            <b>Github</b>
+          </a>
+          <a
+            className="card-footer-item"
+            href="https://www.linkedin.com/in/ralph-parkison-7b759bb3/"
+          >
+            <b>Linkedin</b>
           </a>
         </footer>
       </div>

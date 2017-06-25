@@ -6,12 +6,17 @@
     "bulma": "^0.4.2",
     "classnames": "^2.2.5",
     "codemirror": "^5.26.0",
+    "draft-js": "^0.10.1",
+    "draftjs-to-html": "^0.7.2",
     "react": "^15.5.4",
     "react-codemirror": "^1.0.0",
     "react-dom": "^15.5.4",
+    "react-draft-wysiwyg": "^1.10.0",
     "react-pdf-js": "^1.0.35",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "sendgrid": "^5.1.1",
+    "sendgrid-mailer": "^1.2.1"
   },
   "devDependencies": {
     "node-sass": "^4.5.3",

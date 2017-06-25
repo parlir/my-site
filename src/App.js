@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from "./widgets/NavBar";
 import About from "./views/About";
 import Blog from "./views/Blog";
-import Coding from "./views/Coding";
+import Email from "./views/Email";
 import Contact from "./views/Contact";
 
 class App extends Component {
@@ -21,7 +21,7 @@ class App extends Component {
             }}
           />
           <Route exact path="/" component={About} />
-          <Route path="/coding" component={Coding} />
+          <Route path="/email" component={Email} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
         </div>

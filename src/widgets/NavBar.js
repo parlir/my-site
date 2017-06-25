@@ -54,6 +54,7 @@ class NavBar extends Component {
                 "is-tab",
                 this.props.location.pathname === "/" ? "is-active" : ""
               )}
+              style={{ marginRight: 10 }}
             >
               About
             </Link>
@@ -65,6 +66,7 @@ class NavBar extends Component {
                 "is-tab",
                 this.props.location.pathname === "/contact/" ? "is-active" : ""
               )}
+              style={{ marginRight: 10 }}
             >
               Contact
             </Link>
