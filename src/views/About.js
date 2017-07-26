@@ -29,7 +29,7 @@ const About = () => (
                 </span>
                 <div className="content">
                   <span style={{ fontSize: 13 }}>
-                    I have worked at Epic for around a year and a half and before that I worked as a freelancer and built appraisal software for Berg Appraisals. Currently I am working on building a fitness app that will uses a subscription model to pay trainers when users subscribed to their plan do not accomplish the goals set for a given day.
+                    I have worked at Epic for around a year and a half and before that I worked as a freelancer and built appraisal software for Berg Appraisals. Currently I am working on building a fitness app that uses a subscription model to pay trainers when users subscribed to their plan do not accomplish the goals set for a given day.
                   </span>
                 </div>
               </div>
