@@ -39,7 +39,7 @@ const About = () => (
                 </div>
                 <div style={{ marginBottom: 22 }} className="content">
                   <span style={{ fontSize: 13 }}>
-                    For recreation I enjoy playing chess, running and travel. I enjoy looking at code on github and hearing about new tech. If you play me on lichess I will probably be using the halloween gambit on virtually every time the opportunity presents itself (This is a non-obv or perhaps obv cue about my risk taking).
+                    For recreation I enjoy playing chess, running and travel. I enjoy looking at code on github and hearing about new tech. If you play me on lichess I will probably be using the halloween gambit.
                   </span>
                 </div>
                 <div style={styles.divider} />
@@ -67,7 +67,7 @@ const About = () => (
                     <li>Some functional programming</li>
                     <li>OOP</li>
                     <li>General stuff like data structs etc...</li>
-                    <li>Lover of emacs and hater of vim</li>
+                    <li>Emacs</li>
                   </ul>
                 </div>
                 <div style={styles.divider} />
