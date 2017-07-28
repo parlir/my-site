@@ -48,18 +48,6 @@ class NavBar extends Component {
           >
             <Link
               onClick={() => this.setState({ toggled: !this.state.toggled })}
-              to="/"
-              className={classnames(
-                "nav-item",
-                "is-tab",
-                this.props.location.pathname === "/" ? "is-active" : ""
-              )}
-              style={{ marginRight: 10 }}
-            >
-              About
-            </Link>
-            <Link
-              onClick={() => this.setState({ toggled: !this.state.toggled })}
               to="/contact/"
               className={classnames(
                 "nav-item",
@@ -76,6 +64,19 @@ class NavBar extends Component {
     );
   }
 }
+
+// <Link
+//   onClick={() => this.setState({ toggled: !this.state.toggled })}
+//   to="/"
+//   className={classnames(
+//     "nav-item",
+//     "is-tab",
+//     this.props.location.pathname === "/" ? "is-active" : ""
+//   )}
+//   style={{ marginRight: 10 }}
+// >
+//   About
+// </Link>
 
 NavBar.propTypes = {
   location: PropTypes.object.isRequired

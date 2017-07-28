@@ -20,7 +20,7 @@ class App extends Component {
               marginTop: "5px"
             }}
           />
-          <Route exact path="/" component={About} />
+          <Route exact path="/" component={Contact} />
           <Route path="/email" component={Email} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
