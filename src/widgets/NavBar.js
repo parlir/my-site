@@ -52,7 +52,10 @@ class NavBar extends Component {
               className={classnames(
                 "nav-item",
                 "is-tab",
-                this.props.location.pathname === "/contact/" ? "is-active" : ""
+                this.props.location.pathname === "/contact/" ||
+                  this.props.location.pathname === "/"
+                  ? "is-active"
+                  : ""
               )}
               style={{ marginRight: 10 }}
             >
