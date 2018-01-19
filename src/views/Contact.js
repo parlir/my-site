@@ -6,9 +6,7 @@ const Contact = () => (
     <div className="column is-two-thirds">
       <div className="card">
         <header className="card-header">
-          <p className="card-header-title">
-            Ralph Parkison
-          </p>
+          <p className="card-header-title">Ralph Parkison</p>
           <a className="card-header-icon">
             <span className="icon">
               <i className="fa fa-angle-down" />
@@ -17,13 +15,8 @@ const Contact = () => (
         </header>
         <div className="card-content">
           <div className="content">
-            <b>
-              Howdy if you want to reach out with me feel free to send me an email or contact me on facebook.
-            </b>
-            {" "}
-            <br />
-            If you would like to see the source code to this site go
-            {" "}
+            <b>Feel free to contact me via Facebook or email.</b> <br />
+            If you would like to see the source code to this site go{" "}
             <a href="https://github.com/rparkisoniii/my-site">here</a>
           </div>
         </div>
@@ -37,10 +30,7 @@ const Contact = () => (
           >
             <b>Facebook</b>
           </a>
-          <a
-            className="card-footer-item"
-            href="https://github.com/rparkisoniii/"
-          >
+          <a className="card-footer-item" href="https://github.com/parlir">
             <b>Github</b>
           </a>
           <a
